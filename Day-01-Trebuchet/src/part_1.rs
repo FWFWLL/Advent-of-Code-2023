@@ -19,10 +19,8 @@ pub fn process(input: &str) -> String {
 
 #[test]
 fn test() {
-    let result = process("1abc2
-pqr3stu8vwx
-a1b2c3d4e5f
-treb7uchet");
+    let input = include_str!("../input/test_1.txt");
+    let result = process(input);
 
     assert_eq!(result, "142");
 }

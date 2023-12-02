@@ -34,13 +34,8 @@ pub fn process(input: &str) -> String {
 
 #[test]
 fn test() {
-    let result = process("two1nine
-eightwothree
-abcone2threexyz
-xtwone3four
-4nineeightseven2
-zoneight234
-7pqrstsixteen");
+    let input = include_str!("../input/test_2.txt");
+    let result = process(input);
 
     assert_eq!(result, "281");
 }
