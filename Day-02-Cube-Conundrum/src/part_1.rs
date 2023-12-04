@@ -15,7 +15,7 @@ pub fn process(input: &str) -> String {
             subsets.split("; ")
                 .for_each(|subset| {
                     subset.split(", ")
-                        .filter_map(|cubes| cubes.split_once(" "))
+                        .filter_map(|cubes| cubes.split_once(' '))
                         .for_each(|(amount, cube_type)| {
                             let amount: u32 = amount.parse().unwrap();
 
