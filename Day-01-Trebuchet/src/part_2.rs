@@ -1,5 +1,3 @@
-use rayon::prelude::*;
-
 const REPLACEMENTS: [(&str, &str); 9] = [
     ("one", "o1e"),
     ("two", "t2o"),
@@ -13,12 +11,12 @@ const REPLACEMENTS: [(&str, &str); 9] = [
 ];
 
 pub fn process(input: &str) -> String {
-    let output: u32 = input.par_lines()
+    let output: u32 = input.lines()
         .map(|line| {
             let mut line = line.to_owned();
             REPLACEMENTS.iter().for_each(|(from, to)| line = line.replace(from, to));
 
-            let digits: Vec<u32> = line.par_chars()
+            let digits: Vec<u32> = line.chars()
                 .filter_map(|char| char.to_digit(10))
                 .collect();
 
