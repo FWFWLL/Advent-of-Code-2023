@@ -3,3 +3,4 @@
 - [Day 02: Cube Conundrum](https://adventofcode.com/2023/day/2)
 - [Day 03: Gear Ratios](https://adventofcode.com/2023/day/3)
 - [Day 04: Scratchcards](https://adventofcode.com/2023/day/4)
+- [Day 05: If You Give A Seed A Fertilizer](https://adventofcode.com/2023/day/5)
